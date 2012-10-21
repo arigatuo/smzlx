@@ -1,0 +1,77 @@
+2012/10/20 09:08:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Applications/MAMP/htdocs/yii/db/CDbConnection.php:382
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/yii/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/yii/base/CModule.php(388): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/yii/base/CModule.php(104): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/yii/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /Applications/MAMP/htdocs/yii/web/CFormModel.php(40): ModelCode->init()
+#6 /Applications/MAMP/htdocs/yii/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /Applications/MAMP/htdocs/yii/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /Applications/MAMP/htdocs/yii/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /Applications/MAMP/htdocs/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/htdocs/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/yii/web/CWebApplication.php(283): CController->run('')
+#13 /Applications/MAMP/htdocs/yii/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /Applications/MAMP/htdocs/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/smzlx/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/smzlx/index.php?r=gii/model
+HTTP_REFERER=http://localhost/smzlx/index.php?r=gii/default/index
+---
+2012/10/20 09:14:24 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/smzlx/protected/views/site/index.php:7)
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/web/CController.php(870): SiteController->renderFile()
+#1 /Applications/MAMP/htdocs/yii/web/CController.php(783): SiteController->renderPartial()
+#2 /Applications/MAMP/htdocs/smzlx/protected/controllers/SiteController.php(33): SiteController->render()
+#3 /Applications/MAMP/htdocs/yii/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /Applications/MAMP/htdocs/yii/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/yii/web/CController.php(287): SiteController->runAction()
+#6 /Applications/MAMP/htdocs/yii/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/yii/web/CWebApplication.php(283): SiteController->run()
+#8 /Applications/MAMP/htdocs/yii/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/smzlx/index.php(13): CWebApplication->run()
+REQUEST_URI=/smzlx/
+in /Applications/MAMP/htdocs/smzlx/protected/views/site/index.php (7)
+in /Applications/MAMP/htdocs/smzlx/protected/controllers/SiteController.php (33)
+in /Applications/MAMP/htdocs/smzlx/index.php (13)
+2012/10/20 09:14:40 [error] [exception.CException] exception 'CException' with message 'Property "Test.id" is not defined.' in /Applications/MAMP/htdocs/yii/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/db/ar/CActiveRecord.php(144): CComponent->__get('id')
+#1 /Applications/MAMP/htdocs/yii/web/helpers/CHtml.php(1809): CActiveRecord->__get('id')
+#2 /Applications/MAMP/htdocs/yii/web/helpers/CHtml.php(1772): CHtml::value(Object(Test), 'id')
+#3 /Applications/MAMP/htdocs/smzlx/protected/views/site/index.php(7): CHtml::listData(Array, 'id', 'name')
+#4 /Applications/MAMP/htdocs/yii/web/CBaseController.php(127): require('/Applications/M...')
+#5 /Applications/MAMP/htdocs/yii/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#6 /Applications/MAMP/htdocs/yii/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#7 /Applications/MAMP/htdocs/yii/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /Applications/MAMP/htdocs/smzlx/protected/controllers/SiteController.php(33): CController->render('index', Array)
+#9 /Applications/MAMP/htdocs/yii/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /Applications/MAMP/htdocs/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /Applications/MAMP/htdocs/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/MAMP/htdocs/yii/web/CWebApplication.php(283): CController->run('')
+#14 /Applications/MAMP/htdocs/yii/web/CWebApplication.php(142): CWebApplication->runController('')
+#15 /Applications/MAMP/htdocs/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Applications/MAMP/htdocs/smzlx/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/smzlx/
+---
+2012/10/20 11:04:48 [error] [php] Undefined variable: contents (/Applications/MAMP/htdocs/smzlx/protected/views/layouts/mainLayout.php:6)
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/web/CController.php(785): MainController->renderFile()
+#1 /Applications/MAMP/htdocs/smzlx/protected/controllers/MainController.php(16): MainController->render()
+#2 /Applications/MAMP/htdocs/yii/web/actions/CInlineAction.php(50): MainController->actionIndex()
+#3 /Applications/MAMP/htdocs/yii/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/yii/web/CController.php(287): MainController->runAction()
+#5 /Applications/MAMP/htdocs/yii/web/CController.php(266): MainController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/yii/web/CWebApplication.php(283): MainController->run()
+#7 /Applications/MAMP/htdocs/yii/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/smzlx/index.php(13): CWebApplication->run()
+REQUEST_URI=/smzlx/index.php?r=main/index
+in /Applications/MAMP/htdocs/smzlx/protected/views/layouts/mainLayout.php (6)
+in /Applications/MAMP/htdocs/smzlx/protected/controllers/MainController.php (16)
+in /Applications/MAMP/htdocs/smzlx/index.php (13)

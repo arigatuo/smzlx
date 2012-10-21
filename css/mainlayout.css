@@ -1,0 +1,14 @@
+.header_title{
+    background:url('../images/header_tile.png') repeat-x;
+    width:100%;
+    height:14px;
+    top:0;
+    position:absolute;
+}
+
+.wrapper{
+    background-image: url('../images/light_bg.jpg');
+    background-repeat:repeat;
+    min-width:960px;
+}
+
